@@ -22,8 +22,8 @@ jobs:
     - name: Create RDP User with Secure Password
       shell: powershell
       run: |
-        $username = "YamzzOfficial"
-        $password = "YamzzOffical@123"
+        $username = "Admin"
+        $password = "Kontolpecah@123"
         $securePass = ConvertTo-SecureString $password -AsPlainText -Force
         New-LocalUser -Name $username -Password $securePass -AccountNeverExpires
         Add-LocalGroupMember -Group "Administrators" -Member $username
